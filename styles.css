@@ -42,14 +42,14 @@
   }
   
   .nav-links a {
-    color: #fff;
+    color: white;
     text-decoration: none;
     font-size: 1.2rem;
     transition: color 0.3s ease;
   }
   
   .nav-links a:hover {
-    color: #ff6347; 
+    color: var(--destaque-color); 
   }
   
   #home {
@@ -59,13 +59,24 @@
     justify-content: center;
     align-items: center;
   }
+
+  #home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    z-index: 0;
+  }
   
   #background-video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     object-fit: cover;
     z-index: -1;
   }
@@ -73,10 +84,29 @@
   .overlay-content {
     position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
+    gap: 4rem;
   }
+
+  .description-home{
+    width: 80vh;
+    text-align: justify;
+  }
+
+.description-home h1{
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 3rem;
+}
+
+.description-home p{
+    color: white;
+    font-size: 1.1rem;
+}
+
+span{
+    color: var(--main-color);
+}
   
   .shop-image {
     width: 300px;
