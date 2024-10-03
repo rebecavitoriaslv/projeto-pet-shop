@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --main-color: #F28C28;
+    --second-color: #a9d3ab;
+    --destaque-color:#88C7E0;
+    --fundo-color: #FFFAFA;
+  }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--fundo-color);
+    color: black;
+}
+
+header {
+    background-color: var(--second-color);
+    text-align: center;
+    padding: 30px;
+    border-bottom: 5px solid var(--main-color);
+}
+
+header h1 {
+    color: white;
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.product {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 25px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+}
+
+.product-image img {
+    max-width: 100%;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product h2 {
+    font-size: 1.8rem;
+    margin: 15px 0;
+    color: var(--main-color);
+}
+
+.product .price {
+    font-size: 1.6rem;
+    color: var(--destaque-color);
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.product .buy-btn {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product:hover .product-image img {
+    transform: scale(1.05);
+}
+
+.product .buy-btn:hover {
+    opacity: 0.8;
+}
+
+.voltar{
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    display: flex;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;   
+}
+
+.voltar:hover {
+    opacity: 0.8;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--second-color);
+    color: black;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .products {
+        grid-template-columns: 1fr;
+    }
+}
