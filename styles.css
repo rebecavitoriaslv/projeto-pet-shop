@@ -253,3 +253,79 @@ span{
 .btn:hover {
   background-color: #2980b9;
 }
+
+.contact {
+  margin-top: 100px;
+  padding: 50px 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: auto;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.heading span {
+  color: #2980b9;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+form {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.box {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+textarea {
+  resize: none;
+}
+
+.btn {
+  width: 200px;
+  background-color: #007BFF;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.image {
+  flex-basis: 40%;
+}
+
+.image img {
+  margin-top: 100px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.box-contact {
+  margin-top: 200px;
+  gap: 2rem;
+  padding: 2rem;
+}
