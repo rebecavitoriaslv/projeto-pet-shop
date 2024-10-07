@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pet Shop</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
@@ -74,36 +75,97 @@
       <div class="categoria gato">
           <img src="img/sessao-gato.jpg" alt="Imagem de Gato">
           <h3>Produtos para Gatos</h3>
-          <button class="btn"><a href="cat.html">Conferir</a></button>
+          <button class="btn-cat"><a href="cat.html">Conferir</a></button>
       </div>
       <div class="categoria cachorro">
           <img src="img/sessao-cachorro.jpg" alt="Imagem de Cachorro">
           <h3>Produtos para Cachorros</h3>
-          <button class="btn"><a href="dog.html">Conferir</a></button>
+          <button class="btn-dog"><a href="dog.html">Conferir</a></button>
       </div>
   </div>
+  </section>
 
 
-  <div class="box-contact">
-  <section class="contact" id="contact">
-    <h1 class="heading"> Entre <span>em</span> contato</h1>
 
-    <div class="row">
-      <form action="">
-        <input type="text" placeholder="Nome" required class="box">
-        <input type="email" placeholder="Email" required class="box">
-        <input type="number" placeholder="Número" required class="box">
-        <textarea name="" class="box" placeholder="message" id="" cols="30" rows="10">
-        </textarea>
-        <input type="submit" name="Envie uma mensagem" class="btn" id="">
-      </form>
 
-      <div class="image">
-        <img src="img/undraw_everyday_life_re_1lfb.svg" alt="">
-      </div>
+  <section class="products-section">
+    <div class="category-buttons">
+        <button onclick="filterProducts('Todas')">Todas</button>
+        <button onclick="filterProducts('Rações')">Rações</button>
+        <button onclick="filterProducts('Acessórios')">Acessórios</button>
+        <button onclick="filterProducts('Brinquedos')">Brinquedos</button>
+    </div>
+
+    <div class="products" id="products-list">
+        <!-- Os produtos serão exibidos aqui -->
+    </div>
+</section>
+
+
+
+
+  <section class="contato">
+    <div class="box-contact">
+      <section class="contact" id="contact">
+        <h1 class="heading"> Entre <span>em</span> contato</h1>
+    
+        <div class="row">
+          <form action="">
+            <input type="text" placeholder="Nome" required class="box">
+            <input type="email" placeholder="Email" required class="box">
+            <input type="number" placeholder="Número" required class="box">
+            <textarea name="" class="box" placeholder="message" id="" cols="30" rows="10">
+            </textarea>
+            <input type="submit" name="Envie uma mensagem" class="btn" id="">
+          </form>
+    
+          <div class="image">
+            <img src="img/undraw_everyday_life_re_1lfb.svg" alt="">
+          </div>
+        </div>
+  </section>
+
+
+  <section>
+    <div class="scene">
+      <img src="img/gatinho-novelo-la.png" alt="Gatinho" class="gatinho">
+      <img src="img/novelo-la.png" alt="Novelo de Lã" class="novelo">
     </div>
   </section>
+
+  <footer>
+    <div class="footer-container">
+        <div class="footer-info">
+            <h4>Pet Shop AukiMia</h4>
+            <p>Horário de Funcionamento:</p>
+            <p>Seg - Sex: 8h às 18h</p>
+            <p>Sáb: 9h às 14h</p>
+            <p>Dom: Fechado</p>
+        </div>
+        <div class="footer-social">
+            <h4>Siga-nos</h4>
+            <div class="social-icons">
+                <a href="https://wa.me/00000000" target="_blank" class="social-icon whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://instagram.com/aukimiapet" target="_blank" class="social-icon instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/aukimiapet" target="_blank" class="social-icon twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; Bárbara & Rebeca 2024</p>
+    </div>
+</footer>
+
+
+
 </div>
  
 </body>
+<script src="products.js"></script>
 </html>

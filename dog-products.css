@@ -6,11 +6,12 @@
 }
 
 :root{
-    --main-color: #F28C28;
-    --second-color: #a9d3ab;
-    --destaque-color:#88C7E0;
+    --main-color: #FF6F3C;
+    --second-color: #4BA3C7;
+    --terceira-color: #FF5E87;
+    --destaque-color:#8ED081;
     --fundo-color: #FFFAFA;
-  }
+}
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -67,13 +68,13 @@ main {
 
 .product .price {
     font-size: 1.6rem;
-    color: var(--destaque-color);
+    color: black;
     margin-bottom: 15px;
     font-weight: bold;
 }
 
 .product .buy-btn {
-    background-color: var(--main-color);
+    background-color: var(--second-color);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -97,7 +98,7 @@ main {
 }
 
 .voltar{
-    background-color: var(--main-color);
+    background-color: var(--terceira-color);
     color: white;
     border: none;
     display: flex;
