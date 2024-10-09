@@ -6,166 +6,163 @@
   <title>Pet Shop</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
-  <nav class="navbar">
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#services">Serviços</a></li>
-      <li><a href="#produtos">Produtos</a></li>
-      <li><a href="#contact">Contato</a></li>
-    </ul>
+  <header>
+    <nav class="navbar">
+      <div class="menu-toggle" id="mobile-menu">
+          <i class="fas fa-bars"></i> <!-- Ícone do menu hambúrguer -->
+      </div>
+      <ul class="nav-links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Serviços</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#contact">Contato</a></li>
+      </ul>
   </nav>
-
   
-  <section id="home">
-    <video autoplay muted loop id="background-video">
-      <source src="img/video-home.mp4" type="video/mp4">
-      Seu navegador não suporta vídeos.
-    </video>
-    <div class="overlay-content">
+  
+  </header>
+
+    <section id="home">
+      <video autoplay muted loop id="background-video">
+        <source src="img/Video-Home-gerado.mp4" type="video/mp4">
+        <source src="img/Video-Home-webm.webm" type="video/webm">
+        <source src="img/video-home.hevc.mp4" type="video/hevc">
+        <source src="img/video-home.mp4" type="video/mp4">
+        <source src="img/video-home-ogv.ogv" type="video/ogv">
+        Seu navegador não suporta vídeos.
+      </video>
+      <div class="overlay-content">
         <div class="description-home">
           <img class="logo" src="img/logo.jpg" alt="logo">
-            <h1>Pet Shop <span>AukiMia</span></h1>
-            <p>Com um ambiente acolhedor, o Aukimia preza pela qualidade no atendimento, visando o bem-estar e a saúde dos pets, sempre com profissionais qualificados e comprometidos com o cuidado animal.</p>
+          <h1>Pet Shop <span>AukiMia</span></h1>
+          <p>Com um ambiente acolhedor, o Aukimia preza pela qualidade no atendimento, visando o bem-estar e a saúde dos pets, sempre com profissionais qualificados e comprometidos com o cuidado animal.</p>
         </div>
-      <img src="img/cachorroegato-home.png" alt="Imagem Pet Shop" class="shop-image">
-    </div>
-  </section>
+        <img src="img/cachorroegato-home.png" alt="Imagem Pet Shop" class="shop-image">
+      </div>
+    </section>
 
-
-  <section class="box-principal">
-    <header class="title">
+    <section class="box-principal" id="services">
+      <header class="title">
         <h1>Nossos <span class="destaque">Serviços</span></h1>
-    </header>
- 
-    <div class="cards">
-       <article class="box-card">
-         <h2>Acessórios</h2>
-         <img src="img/venda-de-produtos.png" alt="Venda de produtos">
-         <a href="#" class="btn-1">Confira já!</a>
-       </article>
- 
-       <article class="box-card">
-         <h2 class="h1-changes">Banho e tosa</h2>
-         <img src="img/banho-tosa.png" alt="Banho e tosa">
-         <a href="#" class="btn-2">Confira já!</a>
-       </article>
- 
-       <article class="box-card">
-         <h2 class="h1-changes">Consulta Veterinária</h2>
-         <img id="img-1" src="img/consulta-veterinaria.png" alt="Consulta veterinária">
-         <a href="#" class="btn-3">Confira já!</a>
-       </article>
- 
-       <article class="box-card">
-         <h2>Vacinação</h2>
-         <img src="img/vacinacao.png" alt="Vacinação">
-         <a href="#" class="btn-1">Confira já!</a>
-       </article>
-    </div>
- </section>
+      </header>
 
+      <div class="cards">
+        <article class="box-card">
+          <h2>Acessórios</h2>
+          <img src="img/venda-de-produtos.png" alt="Venda de produtos">
+          <a href="#" class="btn-1">Confira já!</a>
+        </article>
 
- <section class="produtos">
-  <h1>Nossos <span class="destaque">Produtos</span></h1>
-  <div class="produto-categorias">
-      <div class="categoria gato">
+        <article class="box-card">
+          <h2 class="h1-changes">Banho e tosa</h2>
+          <img src="img/banho-tosa.png" alt="Banho e tosa">
+          <a href="#" class="btn-2">Confira já!</a>
+        </article>
+
+        <article class="box-card">
+          <h2 class="h1-changes">Consulta Veterinária</h2>
+          <img id="img-1" src="img/consulta-veterinaria.png" alt="Consulta veterinária">
+          <a href="#" class="btn-3">Confira já!</a>
+        </article>
+
+        <article class="box-card">
+          <h2>Vacinação</h2>
+          <img src="img/vacinacao.png" alt="Vacinação">
+          <a href="#" class="btn-1">Confira já!</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="produtos" id="produtos">
+      <h1>Nossos <span class="destaque">Produtos</span></h1>
+      <div class="produto-categorias">
+        <div class="categoria gato">
           <img src="img/sessao-gato.jpg" alt="Imagem de Gato">
           <h3>Produtos para Gatos</h3>
           <button class="btn-cat"><a href="cat.html">Conferir</a></button>
-      </div>
-      <div class="categoria cachorro">
+        </div>
+        <div class="categoria cachorro">
           <img src="img/sessao-cachorro.jpg" alt="Imagem de Cachorro">
           <h3>Produtos para Cachorros</h3>
           <button class="btn-dog"><a href="dog.html">Conferir</a></button>
+        </div>
       </div>
-  </div>
-  </section>
+    </section>
 
-
-
-
-  <section class="products-section">
-    <div class="category-buttons">
+    <section class="products-section">
+      <div class="category-buttons">
         <button onclick="filterProducts('Todas')">Todas</button>
         <button onclick="filterProducts('Rações')">Rações</button>
         <button onclick="filterProducts('Acessórios')">Acessórios</button>
         <button onclick="filterProducts('Brinquedos')">Brinquedos</button>
-    </div>
+      </div>
 
-    <div class="products" id="products-list">
+      <div class="products" id="products-list">
         <!-- Os produtos serão exibidos aqui -->
-    </div>
-</section>
+      </div>
+    </section>
 
-
-
-
-  <section class="contato">
-    <div class="box-contact">
-      <section class="contact" id="contact">
+    <section class="contato" id="contact">
+      <div class="box-contact">
         <h1 class="heading"> Entre <span>em</span> contato</h1>
-    
+
         <div class="row">
           <form action="">
-            <input type="text" placeholder="Nome" required class="box">
-            <input type="email" placeholder="Email" required class="box">
-            <input type="number" placeholder="Número" required class="box">
-            <textarea name="" class="box" placeholder="message" id="" cols="30" rows="10">
-            </textarea>
-            <input type="submit" name="Envie uma mensagem" class="btn" id="">
+            <input type="text" placeholder="Nome:" required class="box">
+            <input type="email" placeholder="Email:" required class="box">
+            <input type="number" placeholder="Número:" required class="box">
+            <textarea class="box" placeholder="Mensagem:" cols="30" rows="10"></textarea>
+            <input type="submit" name="Envie uma mensagem" class="btn">
           </form>
-    
+
           <div class="image">
             <img src="img/undraw_everyday_life_re_1lfb.svg" alt="">
           </div>
         </div>
-  </section>
+      </div>
+    </section>
 
-
-  <section>
-    <div class="scene">
-      <img src="img/gatinho-novelo-la.png" alt="Gatinho" class="gatinho">
-      <img src="img/novelo-la.png" alt="Novelo de Lã" class="novelo">
-    </div>
-  </section>
+    <section>
+      <div class="scene">
+        <img src="img/gatinho-novelo-la.png" alt="Gatinho" class="gatinho">
+        <img src="img/novelo-la.png" alt="Novelo de Lã" class="novelo">
+      </div>
+    </section>
 
   <footer>
     <div class="footer-container">
-        <div class="footer-info">
-            <h4>Pet Shop AukiMia</h4>
-            <p>Horário de Funcionamento:</p>
-            <p>Seg - Sex: 8h às 18h</p>
-            <p>Sáb: 9h às 14h</p>
-            <p>Dom: Fechado</p>
+      <div class="footer-info">
+        <h4>Pet Shop AukiMia</h4>
+        <p>Horário de Funcionamento:</p>
+        <p>Seg - Sex: 8h às 18h</p>
+        <p>Sáb: 9h às 14h</p>
+        <p>Dom: Fechado</p>
+      </div>
+      <div class="footer-social">
+        <h4>Siga-nos</h4>
+        <div class="social-icons">
+          <a href="https://wa.me/00000000" target="_blank" class="social-icon whatsapp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="https://instagram.com/aukimiapet" target="_blank" class="social-icon instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://twitter.com/aukimiapet" target="_blank" class="social-icon twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
         </div>
-        <div class="footer-social">
-            <h4>Siga-nos</h4>
-            <div class="social-icons">
-                <a href="https://wa.me/00000000" target="_blank" class="social-icon whatsapp">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-                <a href="https://instagram.com/aukimiapet" target="_blank" class="social-icon instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://twitter.com/aukimiapet" target="_blank" class="social-icon twitter">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </div>
-        </div>
+      </div>
     </div>
     <div class="footer-bottom">
-        <p>&copy; Bárbara & Rebeca 2024</p>
+      <p>&copy; <span class="crd">Bárbara</span> & <span class="crd">Rebeca</span> 2024</p>
     </div>
-</footer>
+  </footer>
 
-
-
-</div>
- 
+  <script src="products.js"></script>
+  <script src="script.js"></script>
 </body>
-<script src="products.js"></script>
 </html>
