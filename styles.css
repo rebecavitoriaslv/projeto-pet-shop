@@ -540,6 +540,9 @@ footer {
     color: #fff;
 }
 
+.colormain{
+  color: var(--main-color);
+}
 .crd{
   color: var(--terceira-color);
   font-weight: 800;

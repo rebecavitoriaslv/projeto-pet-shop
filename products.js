@@ -50,6 +50,7 @@ const products = [
     { name: "Pelúcias + Bola", category: "Brinquedos", price: 79.90, img: "img/brinquedo9.jpg"},
     { name: "Ossos fofinhos", category: "Brinquedos", price: 19.90, img: "img/brinquedo10.jpg"},
     { name: "Pelúcias diferentes", category: "Brinquedos", price: 9.90, img: "img/brinquedo11.jpg"},
+    { name: "Arranhador", category: "Brinquedos", price: 50.90, img: "img/arranhador.jpg"},
 ];
 
 function displayProducts(filteredProducts) {
