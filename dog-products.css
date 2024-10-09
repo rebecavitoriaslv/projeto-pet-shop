@@ -127,3 +127,11 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+@media (max-width: 600px){
+    header h1 {
+        color: white;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
