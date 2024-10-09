@@ -26,7 +26,20 @@ const products = [
     { name: "Ração para Gato", category: "Rações", price: 80.90, img: "img/racao4.jpg" },
     { name: "Ração Ronronar", category: "Rações", price: 100.90, img: "img/racao-gato.jpg" },
     { name: "Ração Felino", category: "Rações", price: 95.90, img: "img/racao-gato2.jpg" },
-    { name: "Ração AdeDOG", category: "Rações", price: 75.90, img: "img/racao5.jpg" }
+    { name: "Ração AdeDOG", category: "Rações", price: 75.90, img: "img/racao5.jpg" },
+    { name: "Bola", category: "Brinquedos", price: 9.90, img: "img/brinquedo-cachorro.jpg"},
+    { name: "Osso de pelúcia", category: "Brinquedos", price: 19.90, img: "img/brinquedo-cachorro2.jpg"},
+    { name: "Osso de plástico", category: "Brinquedos", price: 15.90, img: "img/brinquedo1.jpg"},
+    { name: "Osso com bola", category: "Brinquedos", price: 29.90, img: "img/brinquedo2.jpg"},
+    { name: "Mini osso", category: "Brinquedos", price: 9.90, img: "img/brinquedo3.jpg"},
+    { name: "Osso interativo", category: "Brinquedos", price: 39.90, img: "img/brinquedo4.jpg"},
+    { name: "Brinquedo interativo", category: "Brinquedos", price: 69.90, img: "img/brinquedo5.jpg"},
+    { name: "Casinha", category: "Brinquedos", price: 89.90, img: "img/brinquedo6.jpg"},
+    { name: "Coelhos de pelúcia", category: "Brinquedos", price: 29.90, img: "img/brinquedo7.jpg"},
+    { name: "Pelúcias de animais", category: "Brinquedos", price: 29.90, img: "img/brinquedo8.jpg"},
+    { name: "Pelúcias + Bola", category: "Brinquedos", price: 79.90, img: "img/brinquedo9.jpg"},
+    { name: "Ossos fofinhos", category: "Brinquedos", price: 19.90, img: "img/brinquedo10.jpg"},
+    { name: "Pelúcias diferentes", category: "Brinquedos", price: 9.90, img: "img/brinquedo11.jpg"},
 ];
 
 function displayProducts(filteredProducts) {
