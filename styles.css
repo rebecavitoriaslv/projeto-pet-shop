@@ -16,6 +16,7 @@
   body {
     font-family: Arial, sans-serif;
     background-color: var(--fundo-color);
+    overflow-x: hidden;
   }
   
   .navbar {
@@ -649,6 +650,24 @@ footer {
   }
 }
 
+@media (max-width: 330px) {
+  .description-home h1{
+    font-size: 1rem;
+  }
+
+  .description-home p{
+    font-size: .8rem;
+  }
+
+  .logo{
+    width: 3rem;
+  }
+
+  .shop-image{
+    display: none;
+  }
+}
+
 /* Responsividade do SERVIÇOS */
 
 @media (max-width: 700px){
@@ -682,7 +701,6 @@ footer {
 }
 
 @media (max-width: 520px){
-
   .box-card{
     width: 98px; 
     height: 98px;
@@ -694,6 +712,34 @@ footer {
   
   .box-card a {
     padding: 0px 5px; 
+  }
+}
+
+@media (max-width: 450px){
+  .box-card{
+    width: 65px;
+    height: 65px;
+  }
+
+  .box-card img{
+    width: 35px;
+    height: 35px;
+  }
+
+  .btn-services{
+    display: none;
+  }
+}
+
+@media (max-width: 330px){
+  .box-card{
+    width: 60px;
+    height: 60px;
+  }
+
+  .box-card img{
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -710,6 +756,24 @@ footer {
 @media (max-width: 700px){
   .categoria {  
     width: 40%;  
+  }
+}
+
+@media (max-width: 450px){
+  .category-buttons button {
+    padding: 6px 14px;
+    font-size: .7rem;
+  }
+
+  .product{
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 330px){
+  .category-buttons button {
+    padding: 5px 13px;
+    font-size: .6rem;
   }
 }
 
@@ -801,6 +865,12 @@ footer {
   }
 } 
 
+@media (max-width: 400px){
+  .heading{
+    font-size: 1.8rem;
+  }  
+}
+
 /* Responsividade do FOOTER */
 
 @media (max-width: 800px) {
@@ -812,6 +882,15 @@ footer {
 @media (max-width: 500px) {
   .novelo {
     height: 130px; 
+  }
+}
+
+@media (max-width: 350px){
+  .footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
   }
 }
 

@@ -17,6 +17,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--fundo-color);
     color: black;
+    overflow-x: hidden;
 }
 
 header {
@@ -131,7 +132,7 @@ footer {
 @media (max-width: 600px){
     header h1 {
         color: white;
-        font-size: 2rem;
+        font-size: 1.4rem;
         font-weight: bold;
     }
 }
